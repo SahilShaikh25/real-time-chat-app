@@ -1,4 +1,4 @@
-# 💬 Real-Time Chat Application (`rtchatapp`)
+# 💬 Real-Time Chat Application (`RTchat`)
 
 A modern, fast, and feature-rich real-time chat application built with **Django**, **Django Channels**, **Daphne**, and **HTMX**. This project allows users to communicate instantly through WebSockets without page reloads, manage profiles, and participate in dynamic chat rooms.
 
@@ -110,13 +110,3 @@ Open your browser and navigate to: `http://127.0.0.1:8000/`
 For local development, SQLite is configured by default. If you plan to extend this project for production, ensure you manage sensitive variables (like `SECRET_KEY` and `DEBUG`) using environment variables (`.env`).
 
 ---
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check out the [issues page](https://github.com/your-username/rtchatapp/issues).
-
----
-
-## 📝 License
-
-This project is open-source and available under the [MIT License](LICENSE).
