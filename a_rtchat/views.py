@@ -55,18 +55,6 @@ def get_or_create_chatroom(request, username):
     if request.user.username == username:
         return redirect('home')
     
-    # other_user = User.objects.get(username = username)
-    # my_private_chatrooms = request.user.chat_groups.filter(is_private=True)
-    
-    # if my_private_chatrooms.exists():
-    #     for chatroom in my_private_chatrooms:
-    #         if other_user in chatroom.members.all():
-    #             return redirect('chatroom', chatroom.group_name)
-    # else:
-    #     chatroom = Group.objects.create( is_private = True )
-    #     chatroom.members.add(other_user, request.user)   
-    # return redirect('chatroom', chatroom.group_name)
-    
     other_user = User.objects.get(username = username)
     my_chatrooms = request.user.chat_groups.filter(is_private=True)
 
